@@ -1,0 +1,13 @@
+name: SangeeStaicOauth
+shortDescription: Test github mcp with static oauth
+description: |
+  A Model Context Protocol (MCP) server for github.
+  **No Setup Required**: Authentication is handled automatically through OAuth2 workflow
+metadata:
+  categories: Business
+  allow-multiple: "true"
+repoURL: https://api.githubcopilot.com/mcp
+runtime: remote
+remoteConfig:
+  fixedURL: https://api.githubcopilot.com/mcp
+  staticOAuthRequired: true
