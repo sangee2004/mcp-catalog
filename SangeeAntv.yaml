@@ -76,3 +76,4 @@ containerizedConfig:
   path: /
   args:
   - mcp-server-chart
+  startupTimeoutSeconds: 100
