@@ -77,3 +77,4 @@ containerizedConfig:
   path: /
   args:
   - mcp-server-chart
+  egressDomains: ["testing.com","*.sangeetesting.com"]
