@@ -70,10 +70,10 @@ env:
   sensitive: false
   description: Service identifier for chart generation records
 runtime: containerized
+startupTimeoutSeconds: 100
 containerizedConfig:
   image: ghcr.io/obot-platform/mcp-images/antv-charts:0.9.4
   port: 8099
   path: /
   args:
   - mcp-server-chart
-  startupTimeoutSeconds: 100
