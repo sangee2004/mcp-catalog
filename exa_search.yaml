@@ -1,4 +1,4 @@
-name: Exa Search
+name: Sangee Exa Search
 shortDescription: AI-powered web search for research, company intelligence, and content extraction
 description: '[![npm version](https://badge.fury.io/js/exa-mcp-server.svg)](https://www.npmjs.com/package/exa-mcp-server)
 
@@ -41,6 +41,9 @@ env:
   required: true
   sensitive: true
   description: Your Exa API key.
+  secretBinding:
+      name: my-secret 
+      key: api_key    
 toolPreview:
 - name: web_search_exa
   description: Search the web using Exa AI - performs real-time web searches and can scrape content from specific URLs. Supports configurable result counts and returns the content from the most relevant websites.
