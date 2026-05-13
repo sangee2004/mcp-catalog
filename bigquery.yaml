@@ -1,4 +1,4 @@
-name: BigQuery Toolbox
+name: Sangee BigQuery Toolbox
 shortDescription: Execute SQL queries and explore Google BigQuery datasets with secure access
 description: |
   A Model Context Protocol (MCP) server that enables secure interaction with Google BigQuery. This server facilitates communication between AI applications and BigQuery datasets, making data exploration and analysis structured through a controlled interface.
@@ -144,6 +144,9 @@ env:
     sensitive: true
     description: Your service account JSON credentials file
     file: true
+    secretBinding:
+        name: my-bq-secret
+        key: config
   - key: BIGQUERY_DATASET_NAME
     name: BigQuery Dataset Name
     required: false
