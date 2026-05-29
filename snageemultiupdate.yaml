@@ -21,7 +21,7 @@ description: '[![npm version](https://badge.fury.io/js/exa-mcp-server.svg)](http
   - **Deep Research**: AI-powered comprehensive research agent for complex queries
 
   - **Competitor Analysis**: Identify and analyze business competitors
-
+  - versions available for upgrade - 3.1.3 ,3.0.9
 
   ## What you''ll need to connect
 
@@ -85,7 +85,7 @@ toolPreview:
 serverUserType: multiUser
 runtime: containerized
 containerizedConfig:
-  image: ghcr.io/obot-platform/mcp-images/exa-search:3.1.3
+  image: ghcr.io/obot-platform/mcp-images/exa-search:3.0.9
   port: 8099
   path: /
   args:
