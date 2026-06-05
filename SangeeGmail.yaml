@@ -28,3 +28,6 @@ runtime: remote
 startupTimeoutSeconds: 100
 remoteConfig:
   fixedURL: https://gmail-mcp.obot.ai/mcp
+resources:
+  requests:
+    memory: 150Mi
