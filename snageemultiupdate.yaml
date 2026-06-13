@@ -48,8 +48,8 @@ env:
   description: Your Exa API key2.
 - key: EXA_API_KEY3
   name: Exa API Key3
-  required: true
-  sensitive: true
+  required: false
+  sensitive: false
   description: Your Exa API key3.
 toolPreview:
 - name: web_search_exa
