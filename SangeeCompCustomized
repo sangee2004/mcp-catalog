@@ -1,0 +1,14 @@
+name: Sangee Composite
+runtime: composite
+compositeConfig:
+  componentServers:
+    - catalogEntryID: github.com/obot-platform/mcp-catalog::obot-exa-search
+      toolPrefix: my_configured_
+      toolOverrides:
+        - name: list_emails
+          enabled: true
+          overrideDescription: List emails in the user's Gmail account with advanced filtering options.
+        - name: read_email
+          enabled: true
+          overrideDescription: Read a specific email by ID or subject.
+    - catalogEntryID: github.com/obot-platform/mcp-catalog::obot-gmail
