@@ -1,4 +1,4 @@
-name: Sangee Composite Customized 2
+name: Sangee Composite Customized EnabledFalse
 runtime: composite
 compositeConfig:
   componentServers:
