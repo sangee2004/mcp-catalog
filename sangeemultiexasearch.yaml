@@ -1,6 +1,8 @@
 name: Sangee Multi Exa Search
+entryKey: sangee-multi-exasearch
 shortDescription: AI-powered web search for research, company intelligence, and content extraction
 description: '[![npm version](https://badge.fury.io/js/exa-mcp-server.svg)](https://www.npmjs.com/package/exa-mcp-server)
+
 
 
   A Model Context Protocol (MCP) server that lets AI assistants use the Exa AI Search API for web searches. Get real-time web information in a safe and controlled way with advanced search capabilities and content extraction.
