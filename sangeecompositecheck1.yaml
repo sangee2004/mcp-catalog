@@ -3,4 +3,4 @@ runtime: composite
 compositeConfig:
   componentServers:
     - catalogEntryID: sangee-exasearch
-    - catalogEntryID: sangee-multi-exasearch
+    - catalogEntryID: default-sangee-multi-exa-search-secretbinding-12fc868e
