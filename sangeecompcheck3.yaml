@@ -1,0 +1,5 @@
+name: Sangee Composite Check3
+runtime: composite
+compositeConfig:
+  componentServers:
+    - catalogEntryID: ms1kxjlh
