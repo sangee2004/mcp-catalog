@@ -1,0 +1,6 @@
+name: Sangee Composite Check1
+runtime: composite
+compositeConfig:
+  componentServers:
+    - catalogEntryID: sangee-exasearch
+    - catalogEntryID: sangee-multi-exasearch
