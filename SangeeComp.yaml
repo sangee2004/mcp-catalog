@@ -1,4 +1,5 @@
 name: Sangee Composite
+entryKey: sangee_composite
 runtime: composite
 compositeConfig:
   componentServers:
