@@ -1,0 +1,5 @@
+name: Sangee Composite check2
+runtime: composite
+compositeConfig:
+  componentServers:
+    - catalogEntryID: sangee_composite
