@@ -6,4 +6,4 @@ compositeConfig:
       toolPrefix: my_configured_
       toolOverrides:
          - name: delete_email
-          enabled: false
+           enabled: false
