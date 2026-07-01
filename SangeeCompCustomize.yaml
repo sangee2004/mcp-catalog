@@ -7,10 +7,11 @@ compositeConfig:
       toolOverrides:
         - name: list_emails
           enabled: true
-          overrideDescription: List emails in the user's Gmail account with advanced filtering options.
+          overrideDescription: List emails in the current user's Gmail account with many advanced filtering options.
         - name: read_email
           enabled: true
-          overrideDescription: Read a specific email by ID or subject.
+        - name: delete_email
+          enabled: false
     - catalogEntryID: github.com/obot-platform/mcp-catalog::obot-exa-search
       toolOverrides:
         - name: list_emails
