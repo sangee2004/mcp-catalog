@@ -9,5 +9,5 @@ compositeConfig:
            enabled: false
          - name: read_email
            enabled: true
-         - name: list_email
+         - name: list_emails
            enabled: true
