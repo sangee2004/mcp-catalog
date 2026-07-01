@@ -14,6 +14,4 @@ compositeConfig:
           enabled: false
     - catalogEntryID: github.com/obot-platform/mcp-catalog::obot-exa-search
       toolOverrides:
-        - name: list_emails
-          enabled: false
-          overrideDescription: List emails in the user's Gmail account with advanced filtering options.
+        - name: web_search_exa
