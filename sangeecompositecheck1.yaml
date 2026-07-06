@@ -3,4 +3,4 @@ runtime: composite
 compositeConfig:
   componentServers:
     - catalogEntryID: sangee-exasearch
-    - catalogEntryID: ms1df98d
+    - catalogEntryID: ms125ft2
