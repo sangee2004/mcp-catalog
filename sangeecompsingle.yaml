@@ -1,4 +1,4 @@
-name: Sangee Composite
+name: Sangee Composite single
 entryKey: sangee-composite
 runtime: composite
 compositeConfig:
