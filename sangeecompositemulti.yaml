@@ -2,4 +2,4 @@ name: Sangee Composite Multi
 runtime: composite
 compositeConfig:
   componentServers:
-    - catalogEntryID: ms125ft2
+    - mcpServerID: ms125ft2
