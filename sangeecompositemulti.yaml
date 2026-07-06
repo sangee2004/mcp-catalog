@@ -1,4 +1,4 @@
-name: Sangee Composite Check3
+name: Sangee Composite Multi
 runtime: composite
 compositeConfig:
   componentServers:
