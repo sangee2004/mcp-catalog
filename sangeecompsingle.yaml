@@ -1,0 +1,6 @@
+name: Sangee Composite
+entryKey: sangee-composite
+runtime: composite
+compositeConfig:
+  componentServers:
+    - mcpServerID: default-santestsingleui-43910244rqnrf
