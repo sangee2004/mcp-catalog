@@ -2,4 +2,4 @@ name: Sangee Composite Check3
 runtime: composite
 compositeConfig:
   componentServers:
-    - catalogEntryID: ms125ft2
+    - mcpServerID: ms125ft2
