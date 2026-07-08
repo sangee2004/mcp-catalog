@@ -1,5 +1,5 @@
 name: SangeeGmail
-entryKey: sangee_gmail
+entryKey: sangee-gmail
 shortDescription: Send, read, draft, and organize Gmail emails with label management and search
 description: |
   ![Gmail MCP Server](https://img.shields.io/badge/Gmail-MCP%20Server-blue?style=for-the-badge&logo=gmail)
