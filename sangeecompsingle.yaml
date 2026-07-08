@@ -3,4 +3,5 @@ entryKey: sangee-composite-single
 runtime: composite
 compositeConfig:
   componentServers:
-    - catalogEntryID: default-santestsingleui-43910244rqnrf
+    - catalogEntryID: default-santestsingle1-a4af619fk4x79
+    - catalogEntryID: default-sanremote1-1734c9dd62hv9
