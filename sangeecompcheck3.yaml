@@ -1,5 +1,5 @@
-name: Sangee Composite Check3
+name: Sangee Composite Check Update
 runtime: composite
 compositeConfig:
   componentServers:
-    - mcpServerID: ms125ft2
+    - catalogEntryID: sangee-exasearch
