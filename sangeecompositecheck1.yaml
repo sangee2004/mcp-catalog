@@ -4,3 +4,4 @@ compositeConfig:
   componentServers:
     - catalogEntryID: sangee-exasearch
     - mcpServerID: ms158tzx
+    - catalogEntryID: sangee-gmail
