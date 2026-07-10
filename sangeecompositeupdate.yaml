@@ -4,3 +4,4 @@ compositeConfig:
   componentServers:
     - catalogEntryID: sangee-exasearch
     - catalogEntryID: sangee-gmail
+    - catalogEntryID: github.com/obot-platform/mcp-catalog::obot-context7
