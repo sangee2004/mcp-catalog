@@ -1,0 +1,17 @@
+name: Sangee Pagerduty
+serverUserType: singleUser
+runtime: remote
+remoteConfig:
+  urlTemplate: https://${REGION}.mcp.pagerduty.com/mcp
+env:
+  - key: REGION
+    name: Region
+    description: PagerDuty service region
+    required: true
+    options:
+      - value: us
+        name: United States
+        description: PagerDuty US service region
+      - value: eu
+        name: Europe
+        description: PagerDuty EU service region
