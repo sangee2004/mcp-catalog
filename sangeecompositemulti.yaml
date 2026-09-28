@@ -1,5 +1,0 @@
-name: Sangee Composite Multi
-runtime: composite
-compositeConfig:
-  componentServers:
-    - catalogEntryID: testing
