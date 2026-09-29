@@ -29,6 +29,9 @@ components:
         policy: userAllowed
       - key: AUTHORIZATION
         policy: userAllowed
+  - id: outlook
+    name: outlook
+    mcpServerCatalogEntryKey: github.com/obot-platform/mcp-catalog/v2-schema::obot-outloook
 profiles:
   - name: acr1-everything
     subjects:
