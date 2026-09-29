@@ -1,0 +1,21 @@
+type: vmcp
+entryKey: sangee-composite-exa
+displayName: Sangee Composite Exa
+components:
+  - id: default-exa-search-ee44b5ae
+    name: Exa Search
+    mcpServerCatalogEntryKey: github.com/obot-platform/mcp-catalog/v2-schema::obot-exa-search
+    configuration:
+      - key: EXA_TOOLS
+        policy: userAllowed
+      - key: X-API-KEY
+        policy: userAllowed
+    toolOverrides:
+      - name: web_search_exa
+profiles:
+  - name: acr1-everything
+    subjects:
+      - type: selector
+        id: '*'
+    vmcpPermissions:
+      allowAllComponents: true
