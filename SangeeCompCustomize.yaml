@@ -12,6 +12,9 @@ compositeConfig:
           enabled: true
         - name: delete_email
           enabled: false
-    - catalogEntryID: github.com/obot-platform/mcp-catalog::obot-exa-search
+    - catalogEntryID: github.com/obot-platform/mcp-catalog::obot-gitlab
       toolOverrides:
-        - name: web_search_exa
+        - name: list_issues
+          enabled: true
+        - name: list_projects
+          enabled: true
