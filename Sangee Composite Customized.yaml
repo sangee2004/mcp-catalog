@@ -13,6 +13,7 @@ components:
       - name: read_email
         enabled: true
       - name: delete_email
+        enabled: true
   - id: default-gitlab-37d97f15
     name: GitLab
     mcpServerCatalogEntryKey: github.com/obot-platform/mcp-catalog/v2-schema::obot-gitlab
@@ -30,8 +31,6 @@ components:
       - key: USE_PIPELINE
         policy: userAllowed
     toolOverrides:
-      - name: list_issues
-        enabled: true
       - name: list_projects
         enabled: true
 profiles:
