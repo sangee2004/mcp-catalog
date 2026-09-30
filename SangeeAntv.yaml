@@ -1,5 +1,5 @@
 name: Sangee AntV Charts Egress
-shortDescription: Generate 25+ professional chart types for data visualization and analysis .Use ${VAR} fo testing. 
+shortDescription: Generate 25+ professional chart types for data visualization and analysis .Use ${VAR} fo testing.
 description: |
   ![MCP Server](https://badge.mcpx.dev?type=server) [![build](https://github.com/antvis/mcp-server-chart/actions/workflows/build.yml/badge.svg)](https://github.com/antvis/mcp-server-chart/actions/workflows/build.yml) [![npm Version](https://img.shields.io/npm/v/@antv/mcp-server-chart.svg)](https://www.npmjs.com/package/@antv/mcp-server-chart) [![npm License](https://img.shields.io/npm/l/@antv/mcp-server-chart.svg)](https://www.npmjs.com/package/@antv/mcp-server-chart)
 
@@ -49,32 +49,34 @@ description: |
   <img alt="my service identifier website" width="240" src="https://mdn.alipayobjects.com/huamei_dxq8v0/afts/img/dASoTLt6EywAAAAARqAAAAgADu43AQFr/fmt.webp" />
 
   You need to set proper value of `SERVICE_ID` to the MCP server configuration.
-
 metadata:
   categories: Data & Analytics
 icon: https://avatars.githubusercontent.com/u/19199542?v=4
-env:
-- key: VIS_REQUEST_SERVER
-  name: Vis Request Server
-  required: false
-  sensitive: false
-  description: Custom chart generation service URL for private deployment, e.g., from GPT-Vis-SSR.
-- key: DISABLED_TOOLS
-  name: Disabled Tools
-  required: false
-  sensitive: false
-  description: Comma-separated list of tool names to disable
-- key: SERVICE_ID
-  name: Service ID
-  required: false
-  sensitive: false
-  description: Service identifier for chart generation records
 runtime: containerized
 containerizedConfig:
   image: ghcr.io/obot-platform/mcp-images/antv-charts:0.9.4
   port: 8099
   path: /
   args:
-  - mcp-server-chart
+    - mcp-server-chart
   startupTimeoutSeconds: 100
-  egressDomains: ["testing.com","*.sangeetesting.com"]
+  egressDomains: ["testing.com", "*.sangeetesting.com"]
+config:
+  - key: VIS_REQUEST_SERVER
+    name: Vis Request Server
+    required: false
+    sensitive: false
+    description: Custom chart generation service URL for private deployment, e.g., from GPT-Vis-SSR.
+    usage: env
+  - key: DISABLED_TOOLS
+    name: Disabled Tools
+    required: false
+    sensitive: false
+    description: Comma-separated list of tool names to disable
+    usage: env
+  - key: SERVICE_ID
+    name: Service ID
+    required: false
+    sensitive: false
+    description: Service identifier for chart generation records
+    usage: env

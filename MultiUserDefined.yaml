@@ -9,21 +9,21 @@ description: |
   - User-defined headers (X-User-Token per MCPServerInstance)
   - Server-level env vars (GREETING, SECRET_KEY)
 runtime: containerized
-serverUserType: multiUser
 containerizedConfig:
   image: ghcr.io/thedadams/header-mcp:main
   port: 3000
   path: /mcp
   startupTimeoutSeconds: 30
-multiUserConfig:
-  userDefinedHeaders:
-    - name: X-OBOT-SPECIAL
-      key: X-OBOT-SPECIAL
-      description: Per-user authentication token passed with each request to the shared server
-      sensitive: true
-      required: true
-    - name: X-OBOT-SPECIAL1
-      key: X-OBOT-SPECIAL1
-      description: Per-user authentication token passed with each request to the shared server
-      sensitive: false
-      required: false
+config:
+  - name: X-OBOT-SPECIAL
+    key: X-OBOT-SPECIAL
+    description: Per-user authentication token passed with each request to the shared server
+    sensitive: true
+    required: true
+    usage: header
+  - name: X-OBOT-SPECIAL1
+    key: X-OBOT-SPECIAL1
+    description: Per-user authentication token passed with each request to the shared server
+    sensitive: false
+    required: false
+    usage: header
