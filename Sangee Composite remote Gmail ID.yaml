@@ -1,0 +1,14 @@
+type: vmcp
+entryKey: sangee-composite-remote-gmail-id
+displayName: Sangee Composite remote Gmail ID
+components:
+  - id: default-gmail-8a99d8be
+    name: Gmail
+    mcpServerCatalogEntryKey: github.com/obot-platform/mcp-catalog/v2-schema::obot-gmail
+profiles:
+  - name: acr15zc85
+    subjects:
+      - type: user
+        id: "2"
+    vmcpPermissions:
+      allowAllComponents: true

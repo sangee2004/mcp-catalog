@@ -1,0 +1,28 @@
+type: vmcp
+entryKey: sangee-composite-check-update
+displayName: Sangee Composite Check Update
+components:
+  - id: default-sangee-exa-search-secretbinding-72dcc20b
+    name: Sangee Exa Search SecretBinding
+    mcpServerCatalogEntryKey: sangee-exasearch
+    configuration:
+      - key: EXA_API_KEY
+        policy: userAllowed
+  - id: default-sangeegmail-df930f56
+    name: SangeeGmail
+    mcpServerCatalogEntryKey: sangee-gmail
+  - id: default-context7-828d8ffa
+    name: Context7
+    mcpServerCatalogEntryKey: github.com/obot-platform/mcp-catalog/v2-schema::obot-context7
+    configuration:
+      - key: CONTEXT7_ENDPOINT
+        policy: userAllowed
+      - key: AUTHORIZATION
+        policy: userAllowed
+profiles:
+  - name: acr15zc85
+    subjects:
+      - type: user
+        id: "2"
+    vmcpPermissions:
+      allowAllComponents: true

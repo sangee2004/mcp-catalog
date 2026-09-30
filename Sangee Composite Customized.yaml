@@ -1,0 +1,43 @@
+type: vmcp
+entryKey: sangee-composite-customized
+displayName: Sangee Composite Customized
+components:
+  - id: default-gmail-8a99d8be
+    name: Gmail
+    mcpServerCatalogEntryKey: github.com/obot-platform/mcp-catalog/v2-schema::obot-gmail
+    toolPrefix: my_configured_
+    toolOverrides:
+      - name: list_emails
+        overrideDescription: List emails in the current user's Gmail account with many advanced filtering options.
+        enabled: true
+      - name: read_email
+        enabled: true
+      - name: delete_email
+  - id: default-gitlab-37d97f15
+    name: GitLab
+    mcpServerCatalogEntryKey: github.com/obot-platform/mcp-catalog/v2-schema::obot-gitlab
+    configuration:
+      - key: GITLAB_PERSONAL_ACCESS_TOKEN
+        policy: userAllowed
+      - key: GITLAB_API_URL
+        policy: userAllowed
+      - key: GITLAB_READ_ONLY_MODE
+        policy: userAllowed
+      - key: USE_GITLAB_WIKI
+        policy: userAllowed
+      - key: USE_MILESTONE
+        policy: userAllowed
+      - key: USE_PIPELINE
+        policy: userAllowed
+    toolOverrides:
+      - name: list_issues
+        enabled: true
+      - name: list_projects
+        enabled: true
+profiles:
+  - name: acr15zc85
+    subjects:
+      - type: user
+        id: "2"
+    vmcpPermissions:
+      allowAllComponents: true
