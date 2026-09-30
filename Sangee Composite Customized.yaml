@@ -33,6 +33,9 @@ components:
     toolOverrides:
       - name: list_projects
         enabled: true
+  - id: outlook
+    name: outlook
+    mcpServerCatalogEntryKey: github.com/obot-platform/mcp-catalog/v2-schema::obot-outlook
 profiles:
   - name: acr15zc85
     subjects:
