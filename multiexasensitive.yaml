@@ -67,7 +67,6 @@ toolPreview:
     params:
       taskId: The task ID returned from deep_researcher_start
 runtime: containerized
-serverUserType: multiUser
 containerizedConfig:
   image: ghcr.io/obot-platform/mcp-images/exa-search:3.0.9
   port: 8099
@@ -75,10 +74,11 @@ containerizedConfig:
   args:
     - exa-mcp-server
     - --tools=web_search_exa,research_paper_search,company_research,crawling,competitor_finder,linkedin_search,wikipedia_search_exa,github_search
-env:
+config:
   - key: EXA_API_KEY
     name: Exa API Key
     required: true
     sensitive: true
-    description: Your Exa API key.   
+    description: Your Exa API key.
     value: myexakey1234567890
+    usage: env
