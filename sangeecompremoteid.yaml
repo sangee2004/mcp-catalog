@@ -1,5 +1,0 @@
-name: Sangee Composite remote Gmail ID
-runtime: composite
-compositeConfig:
-  componentServers:
-    - catalogEntryID: default-gmail-8a99d8be

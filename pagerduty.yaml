@@ -1,25 +1,25 @@
 name: Sangee Pagerduty
-serverUserType: singleUser
-env:
-- name: PagerDuty region
-  key: PAGERDUTY_MCP_HOST
-  description: Choose the region where your PagerDuty account is hosted
-  required: true
-  sensitive: false
-  options:
-  - name: US
-    value: mcp.pagerduty.com
-    description: PagerDuty US region
-  - name: EU
-    value: mcp.eu.pagerduty.com
-    description: PagerDuty EU region
 runtime: remote
 remoteConfig:
   URLTemplate: https://${PAGERDUTY_MCP_HOST}/mcp
-  headers:
+config:
+  - name: PagerDuty region
+    key: PAGERDUTY_MCP_HOST
+    description: Choose the region where your PagerDuty account is hosted
+    required: true
+    sensitive: false
+    options:
+      - name: US
+        value: mcp.pagerduty.com
+        description: PagerDuty US region
+      - name: EU
+        value: mcp.eu.pagerduty.com
+        description: PagerDuty EU region
+    usage: env
   - name: PagerDuty API Key
     description: PagerDuty User API token from My Profile > User Settings > API Access
     key: Authorization
     required: true
     sensitive: true
     prefix: "Token token="
+    usage: header

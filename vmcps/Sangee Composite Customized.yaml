@@ -1,0 +1,25 @@
+type: vmcp
+entryKey: sangee-composite-customized
+displayName: Sangee Composite Customized
+components:
+  - id: default-gmail-8a99d8be
+    name: Gmail
+    mcpServerCatalogEntryKey: github.com/obot-platform/mcp-catalog/v2-schema::obot-gmail
+    toolPrefix: my_configured_
+    toolOverrides:
+      - name: list_emails
+        overrideDescription: List emails in the current user's Gmail account with many advanced filtering options.
+        enabled: true
+      - name: read_email
+        enabled: true
+      - name: delete_email
+  - id: default-outlook-841b850d
+    name: Outlook
+    mcpServerCatalogEntryKey: github.com/obot-platform/mcp-catalog/v2-schema::obot-outlook
+profiles:
+  - name: acr1b2pxl
+    subjects:
+      - type: user
+        id: "2"
+    vmcpPermissions:
+      allowAllComponents: true

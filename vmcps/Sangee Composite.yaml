@@ -1,0 +1,30 @@
+type: vmcp
+entryKey: sangee-composite
+displayName: Sangee Composite
+components:
+  - id: default-gitlab-37d97f15
+    name: GitLab
+    mcpServerCatalogEntryKey: github.com/obot-platform/mcp-catalog/v2-schema::obot-gitlab
+    configuration:
+      - key: GITLAB_PERSONAL_ACCESS_TOKEN
+        policy: userAllowed
+      - key: GITLAB_API_URL
+        policy: userAllowed
+      - key: GITLAB_READ_ONLY_MODE
+        policy: userAllowed
+      - key: USE_GITLAB_WIKI
+        policy: userAllowed
+      - key: USE_MILESTONE
+        policy: userAllowed
+      - key: USE_PIPELINE
+        policy: userAllowed
+  - id: default-gmail-8a99d8be
+    name: Gmail
+    mcpServerCatalogEntryKey: github.com/obot-platform/mcp-catalog/v2-schema::obot-gmail
+profiles:
+  - name: acr1b2pxl
+    subjects:
+      - type: user
+        id: "2"
+    vmcpPermissions:
+      allowAllComponents: true
