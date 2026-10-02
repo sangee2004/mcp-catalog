@@ -35,6 +35,11 @@
       "id": "default-gmail-8a99d8be",
       "mcpServerCatalogEntryKey": "github.com/obot-platform/mcp-catalog/v2-schema::obot-gmail",
       "name": "Gmail"
+    },
+    {
+      "id": "outlook",
+      "mcpServerCatalogEntryKey": "github.com/obot-platform/mcp-catalog/v2-schema::obot-outlook",
+      "name": "outlook"
     }
   ],
   "displayName": "Sangee Composite",
