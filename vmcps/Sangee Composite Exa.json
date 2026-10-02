@@ -1,0 +1,41 @@
+{
+  "components": [
+    {
+      "configuration": [
+        {
+          "key": "EXA_TOOLS",
+          "policy": "userAllowed"
+        },
+        {
+          "key": "X-API-KEY",
+          "policy": "userAllowed"
+        }
+      ],
+      "id": "default-exa-search-ee44b5ae",
+      "mcpServerCatalogEntryKey": "github.com/obot-platform/mcp-catalog/v2-schema::obot-exa-search",
+      "name": "Exa Search",
+      "toolOverrides": [
+        {
+          "name": "web_search_exa"
+        }
+      ]
+    }
+  ],
+  "displayName": "Sangee Composite Exa",
+  "entryKey": "sangee-composite-exa",
+  "profiles": [
+    {
+      "name": "Everything",
+      "subjects": [
+        {
+          "id": "*",
+          "type": "selector"
+        }
+      ],
+      "vmcpPermissions": {
+        "allowAllComponents": true
+      }
+    }
+  ],
+  "type": "vmcp"
+}

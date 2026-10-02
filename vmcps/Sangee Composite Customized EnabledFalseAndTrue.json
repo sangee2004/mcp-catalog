@@ -1,0 +1,40 @@
+{
+  "components": [
+    {
+      "id": "default-gmail-8a99d8be",
+      "mcpServerCatalogEntryKey": "github.com/obot-platform/mcp-catalog/v2-schema::obot-gmail",
+      "name": "Gmail",
+      "toolOverrides": [
+        {
+          "name": "delete_email"
+        },
+        {
+          "enabled": true,
+          "name": "read_email"
+        },
+        {
+          "enabled": true,
+          "name": "list_emails"
+        }
+      ],
+      "toolPrefix": "my_configured_"
+    }
+  ],
+  "displayName": "Sangee Composite Customized EnabledFalseAndTrue",
+  "entryKey": "sangee-composite-customized-enabledfalseandtrue",
+  "profiles": [
+    {
+      "name": "Everything",
+      "subjects": [
+        {
+          "id": "*",
+          "type": "selector"
+        }
+      ],
+      "vmcpPermissions": {
+        "allowAllComponents": true
+      }
+    }
+  ],
+  "type": "vmcp"
+}

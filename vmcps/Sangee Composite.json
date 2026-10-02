@@ -1,0 +1,57 @@
+{
+  "components": [
+    {
+      "configuration": [
+        {
+          "key": "GITLAB_PERSONAL_ACCESS_TOKEN",
+          "policy": "userAllowed"
+        },
+        {
+          "key": "GITLAB_API_URL",
+          "policy": "userAllowed"
+        },
+        {
+          "key": "GITLAB_READ_ONLY_MODE",
+          "policy": "userAllowed"
+        },
+        {
+          "key": "USE_GITLAB_WIKI",
+          "policy": "userAllowed"
+        },
+        {
+          "key": "USE_MILESTONE",
+          "policy": "userAllowed"
+        },
+        {
+          "key": "USE_PIPELINE",
+          "policy": "userAllowed"
+        }
+      ],
+      "id": "default-gitlab-37d97f15",
+      "mcpServerCatalogEntryKey": "github.com/obot-platform/mcp-catalog/v2-schema::obot-gitlab",
+      "name": "GitLab"
+    },
+    {
+      "id": "default-gmail-8a99d8be",
+      "mcpServerCatalogEntryKey": "github.com/obot-platform/mcp-catalog/v2-schema::obot-gmail",
+      "name": "Gmail"
+    }
+  ],
+  "displayName": "Sangee Composite",
+  "entryKey": "sangee-composite",
+  "profiles": [
+    {
+      "name": "Everything",
+      "subjects": [
+        {
+          "id": "*",
+          "type": "selector"
+        }
+      ],
+      "vmcpPermissions": {
+        "allowAllComponents": true
+      }
+    }
+  ],
+  "type": "vmcp"
+}

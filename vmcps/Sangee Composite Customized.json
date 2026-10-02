@@ -1,0 +1,61 @@
+{
+  "components": [
+    {
+      "id": "default-gmail-8a99d8be",
+      "mcpServerCatalogEntryKey": "github.com/obot-platform/mcp-catalog/v2-schema::obot-gmail",
+      "name": "Gmail",
+      "toolOverrides": [
+        {
+          "enabled": true,
+          "name": "list_emails",
+          "overrideDescription": "List emails in the current user's Gmail account with many advanced filtering options."
+        },
+        {
+          "enabled": true,
+          "name": "read_email"
+        },
+        {
+          "name": "delete_email"
+        }
+      ],
+      "toolPrefix": "my_configured_"
+    },
+    {
+      "configuration": [
+        {
+          "key": "EXA_TOOLS",
+          "policy": "userAllowed"
+        },
+        {
+          "key": "X-API-KEY",
+          "policy": "userAllowed"
+        }
+      ],
+      "id": "default-exa-search-ee44b5ae",
+      "mcpServerCatalogEntryKey": "github.com/obot-platform/mcp-catalog/v2-schema::obot-exa-search",
+      "name": "Exa Search",
+      "toolOverrides": [
+        {
+          "name": "web_search_exa"
+        }
+      ]
+    }
+  ],
+  "displayName": "Sangee Composite Customized",
+  "entryKey": "sangee-composite-customized",
+  "profiles": [
+    {
+      "name": "Everything",
+      "subjects": [
+        {
+          "id": "*",
+          "type": "selector"
+        }
+      ],
+      "vmcpPermissions": {
+        "allowAllComponents": true
+      }
+    }
+  ],
+  "type": "vmcp"
+}

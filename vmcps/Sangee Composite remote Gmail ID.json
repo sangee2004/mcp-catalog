@@ -1,0 +1,26 @@
+{
+  "components": [
+    {
+      "id": "default-gmail-8a99d8be",
+      "mcpServerCatalogEntryKey": "github.com/obot-platform/mcp-catalog/v2-schema::obot-gmail",
+      "name": "Gmail"
+    }
+  ],
+  "displayName": "Sangee Composite remote Gmail ID",
+  "entryKey": "sangee-composite-remote-gmail-id",
+  "profiles": [
+    {
+      "name": "Everything",
+      "subjects": [
+        {
+          "id": "*",
+          "type": "selector"
+        }
+      ],
+      "vmcpPermissions": {
+        "allowAllComponents": true
+      }
+    }
+  ],
+  "type": "vmcp"
+}

@@ -1,0 +1,52 @@
+{
+  "components": [
+    {
+      "configuration": [
+        {
+          "key": "EXA_API_KEY",
+          "policy": "userAllowed"
+        }
+      ],
+      "id": "default-sangee-exa-search-secretbinding-72dcc20b",
+      "mcpServerCatalogEntryKey": "sangee-exasearch",
+      "name": "Sangee Exa Search SecretBinding"
+    },
+    {
+      "id": "default-sangeegmail-df930f56",
+      "mcpServerCatalogEntryKey": "sangee-gmail",
+      "name": "SangeeGmail"
+    },
+    {
+      "configuration": [
+        {
+          "key": "CONTEXT7_ENDPOINT",
+          "policy": "userAllowed"
+        },
+        {
+          "key": "AUTHORIZATION",
+          "policy": "userAllowed"
+        }
+      ],
+      "id": "default-context7-828d8ffa",
+      "mcpServerCatalogEntryKey": "github.com/obot-platform/mcp-catalog/v2-schema::obot-context7",
+      "name": "Context7"
+    }
+  ],
+  "displayName": "Sangee Composite Check Update",
+  "entryKey": "sangee-composite-check-update",
+  "profiles": [
+    {
+      "name": "Everything",
+      "subjects": [
+        {
+          "id": "*",
+          "type": "selector"
+        }
+      ],
+      "vmcpPermissions": {
+        "allowAllComponents": true
+      }
+    }
+  ],
+  "type": "vmcp"
+}
