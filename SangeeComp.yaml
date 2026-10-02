@@ -4,4 +4,4 @@ runtime: composite
 compositeConfig:
   componentServers:
     - catalogEntryID: github.com/obot-platform/mcp-catalog::obot-gitlab
-    - catalogEntryID: github.com/obot-platform/mcp-catalog::obot-gmai
+    - catalogEntryID: github.com/obot-platform/mcp-catalog::obot-gmail
